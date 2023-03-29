@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="left-signup">
+                <h1>Validação de dados e Formulário responsivo !</h1>
+                <img class="left-signup__img" src="/assets/img/fenix.svg" alt="">
+                <h1>Julio Cesar de Jesus</h1>
+            </div>
+            <div class="rigth-signup">
+                <form class="form" data-form>
+                    <h1 class="signup__title">
+                        Sign UP
+                    </h1>
+                    <div class="form__group">
+                        <label for="inputName" class="form__label hide">Name</label>
+                        <input type="text" name="name" class="form__input-text" id="inputName" placeholder="Name" required data-input>
+                        <i class="form__input-icon fa-solid fa-user"></i>
+                        <span class="form__message-error" data-error-message></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="inputEmail" class="form__label hide">Email</label>
+                        <input type="email" name="email" class="form__input-text" id="inputEmail" placeholder="Email" required data-input>
+                        <i class="form__input-icon fa-solid fa-envelope"></i>
+                        <span class="form__message-error" data-error-message></span>
+                    </div>
+                    <div class="form__group">
+                        <label for="inputSenha" class="form__label hide">Password</label>
+                        <input type="password" name="password" class="form__input-text" id="inputSenha" placeholder="Password"required data-input>
+                        <i class="form__input-icon fa-solid fa-lock"></i>
+                        <i class="form__input-icon fa-solid fa-eye" data-password-eye></i>
+                        <span class="form__message-error" data-error-message></span>
+                    </div>
+                        <div class="requirements">
+                            <div class="requirements__progressbar" data-requirement-progressbar data-percentage="0"></div>
+                            <div class="requirements__description">The password must have</div>
+                            <ul class="requirements__list">
+                                <li class="requirements__item" data-requirement-item = "lowerUpperCase" ><i class="requirements__item-icon fa-solid fa-circle-xmark" data-circle-checked="lowerUpperCase__checkIcon"></i>At least 1 uppercase letter and 1 lowercase letter</li>
+                                <li class="requirements__item" data-requirement-item = "number" ><i class="requirements__item-icon fa-solid fa-circle-xmark" data-circle-checked="number__checkIcon"></i>At least 1 number</li>
+                                <li class="requirements__item" data-requirement-item = "specialCharacter" ><i class="requirements__item-icon fa-solid fa-circle-xmark" data-circle-checked="specialCharacter__checkIcon"></i>At least 1 special character</li>
+                                <li class="requirements__item" data-requirement-item = "minCharacter" ><i class="requirements__item-icon fa-solid fa-circle-xmark" data-circle-checked="minCharacter__checkIcon"></i>At least 8 characters</li>
+                            </ul>
+                        </div>
+                    
+                    <div class="form__group--flex">
+                        <input type="checkbox" name="terms" id="inputTerms" class="form__input-checkbox" required data-input>
+                        <label for="inputTerms" class="form__label">I agree with the <a class="form__link" href="#">terms</a> and <a class="form__link" href="#">Privacy Policy</a></label>
+                        <span class="form__message-error--checkbox" data-error-message></span>
+                    </div>
+                    <div class="form__group form__group--center">
+                        <button class="form__button-sumit" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <script src="https://kit.fontawesome.com/52c1119a5c.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/showPassword.js"></script>
+    <script src="/assets/js/form-validation.js"></script>
+</body>
+</html>
